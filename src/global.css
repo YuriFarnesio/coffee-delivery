@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+body {
+  @apply bg-background;
+  @apply text-base-text;
+  @apply leading-default;
+  @apply antialiased;
+}
+
+:focus {
+  outline: none;
+}
+
+body, input, textarea, button {
+  @apply font-roboto;
+  @apply text-lg;
+  @apply leading-default;
+  @apply font-normal;
+}
+
+.titleXL {
+  @apply font-baloo;
+  @apply text-5xl;
+  @apply leading-default;
+  @apply font-extrabold;
+}
+
+.titleL {
+  @apply font-baloo;
+  @apply text-4xl;
+  @apply leading-default;
+  @apply font-extrabold;
+}
+
+.titleM {
+  @apply font-baloo;
+  @apply text-3xl;
+  @apply leading-default;
+  @apply font-extrabold;
+}
+
+.titleS {
+  @apply font-baloo;
+  @apply text-2xl;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.titleXS {
+  @apply font-baloo;
+  @apply text-xl;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.textL {
+  @apply font-roboto;
+  @apply text-2xl;
+  @apply leading-default;
+  @apply font-normal;
+}
+
+.textBoldL {
+  @apply font-roboto;
+  @apply text-2xl;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.textM {
+  @apply font-roboto;
+  @apply text-lg;
+  @apply leading-default;
+  @apply font-normal;
+}
+
+.textBoldM {
+  @apply font-roboto;
+  @apply text-lg;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.textS {
+  @apply font-roboto;
+  @apply text-md;
+  @apply leading-default;
+  @apply font-normal;
+}
+
+.textXS {
+  @apply font-roboto;
+  @apply text-sm;
+  @apply leading-default;
+  @apply font-normal;
+}
+
+.textBoldXS {
+  @apply font-roboto;
+  @apply text-sm;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.tag {
+  @apply font-roboto;
+  @apply text-xs;
+  @apply leading-default;
+  @apply font-bold;
+}
+
+.buttonG {
+  @apply font-roboto;
+  @apply text-md;
+  @apply leading-big;
+  @apply font-bold;
+}
+
+.buttonM {
+  @apply font-roboto;
+  @apply text-sm;
+  @apply leading-big;
+  @apply font-normal;
+}
